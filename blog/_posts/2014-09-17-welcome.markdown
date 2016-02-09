@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Welcome to the site"
+date:   2015-01-06 01:23:28
+categories: general
+author: dave
+---
+Hi, and thanks for visiting the site, it has been a long time coming but I am glad to finally get it off the ground. I have been working solidly on various projects over the last couple of years and I just managed to squeeze in some time recently to knock together a portfolio, phew! So if it’s looking a little bare its just because I’m working on getting content up :)
+
+Anyway, I am hoping to take this opportunity to not just stick some examples of work up but also to collect together various odds and ends of code that I always seem to come across and stick them on here so they can stop  escaping from my brain. So I’m sticking all my little code snippets and solutions to coding problems up on here. I’m finally giving back!

@@ -1,0 +1,40 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+weight: 4
+---
+
+<div class="container pt">
+    <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h3>CONTACT ME</h3>
+            <hr>
+            <p>Use the form below to get in touch!</p>
+        </div>
+    </div>
+    <div class="row mt">
+        <div class="col-lg-8 col-lg-offset-2">
+            <form role="form" action="http://formspree.io/dave@tehdev.com" method="post">
+                <div class="form-group">
+                    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="_replyto">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="_subject"  id="subjectEmail1" placeholder="Subject">
+                    <br>
+                </div>
+                <textarea class="form-control" rows="6" placeholder="Enter your text here" name="body"></textarea>
+                <!--<input type="text" name="_gotcha" style="display:none" />-->
+                <br>
+                <input type="hidden" name="_next" value="http://localhost:4000/thanks" />
+                <button type="submit" class="btn btn-success">SUBMIT</button>
+            </form>
+        </div>
+    </div><!-- /row -->
+</div><!-- /container -->
+

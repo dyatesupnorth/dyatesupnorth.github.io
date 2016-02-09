@@ -1,0 +1,34 @@
+---
+layout: default
+title: Work
+permalink: /work/
+date:   2014-02-06 01:23:28
+weight: 1
+---
+<!-- +++++ Projects Section +++++ -->
+
+<div class="container pt">
+    <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h3>MY WORK</h3>
+            <hr>
+            <p>Some awesome work I have done for some awesome people.
+                <br/>
+                <small>*Not Listed: All the secret, awesome stuff I've done for other awesome people. </small>
+            </p>
+        </div>
+    </div>
+    <div class="row mt centered">
+        {% for post in site.categories['work'] %}
+        <div class="col-lg-4">
+            <a href="{{ post.url}}"><img class="img-responsive"  src="{{post.featuredImage}}"
+                                                          alt=""/></a>
+
+            <p>{{post.title}}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+    <!-- /row -->
+</div><!-- /container -->
+

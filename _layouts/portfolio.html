@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<!-- +++++ Projects Section +++++ -->
+
+<div class="container pt">
+   
+    <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h3>{{ page.title }}</h3>
+            <hr>
+            <p>{{ content }}</p>
+        </div>
+    </div>
+    <div class="row mt centered">
+        <div class="col-lg-8 col-lg-offset-2">
+            <p><img class="img-responsive" src="{{page.image1}}" alt=""></p>
+            <p><img class="img-responsive" src="{{page.image2}}" alt=""></p>
+            <p><img class="img-responsive" src="{{page.image3}}" alt=""></p>
+            <p><bt>Client: <strong>{{page.client}}</strong></bt> - <bt>Type: <strong>{{page.type}}</strong></bt> - <bt>Date: <strong>{{page.date | date: "%B %Y"}}</strong></bt></p>
+        </div>
+    </div><!-- /row -->
+    
+     <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h5><a href="/work">Go Back</a> </h5>
+           
+        </div>
+    </div>
+</div><!-- /container -->
+
