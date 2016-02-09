@@ -42,7 +42,7 @@ weight: 2
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- Mugshot. -->
                     <p><img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="50px" height="50px">
-                        <ba>{{post.author.name}}</ba>
+                        <ba>{{ author.display_name }}</ba>
                     </p>
                     <p>
                         <bd>{{post.date | date: "%-d %B %Y" }}</bd>
