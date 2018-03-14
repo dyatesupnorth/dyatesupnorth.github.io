@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Vagrant Cheat Sheet
-date:   2018-14-03 00:01:13
+date:   2018-03-14 00:01:13
 categories: code
 ---
 Below are some of my most used `Vagrant` commands. Also works aas a kind of how to I guess if you just enter each command one after the other.
