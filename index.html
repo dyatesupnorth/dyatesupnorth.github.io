@@ -5,19 +5,24 @@ layout: default
 <div id="ww">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 centered">
+            <div class="col-lg-12 text-center">
                 <div id="banner-wrapper" class="landing-banner">
 
-                    <span class="banner-intro">Hi, <strong>I'm Dave</strong> and I'm a</span>
+                    <span class="banner-intro">Hi, <strong>I'm Dave</strong> and I'm a coffee drinkin'</span>
 
                     <h1 class="banner-main">
                         <ul class="texts">
+                            <li>Web Developer</li>
+                            <li>Mobile Developer</li>
                             <li>UI Designer</li>
                             <li>UX Developer</li>
-                            <li>Web Developer</li>
                         </ul>
                     </h1>
                     <span class="banner-outro">based in <strong>Orkney, UK</strong></span>
+                    <p>
+                    <small>*epic mountain is for demonstrative purposes only.</small>
+                    </p>
+
                 </div>
 
 
@@ -28,20 +33,3 @@ layout: default
     </div>
     <!-- /container -->
 </div><!-- /ww -->
-
-
-<!-- +++++ Projects Section +++++ -->
-<div class="container pt">
-    <div class="row mt centered">
-        {% for post in site.categories['work'] %}
-        <div class="col-lg-4">
-            <a href="{{post.url}}"><img class="img-responsive" src="{{post.featuredImage}}"
-                                                                  alt=""/></a>
-
-            <p>{{post.title}}</p>
-        </div>
-        {% endfor %}
-
-    </div>
-    <!-- /row -->
-</div><!-- /container -->

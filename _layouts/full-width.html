@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    <div class="content__wrapper {% if page.url == '/' %}bg-image{% endif %}">
+        {% include header.html %}
+        <div class="content">
+            {{ content }}
+        </div>
+    {% include footer.html %}
+    </div>
+
+    <!-- /.row -->
+    <script src="{{ '../js/jquery.js'}}"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- PARALLAX SCRIPTS-->
+    <!--<script src="-->
+    <!--/js/jquery-2.1.1.min.js"></script>-->
+    <script src="{{ '../js/jquery.fittext.js'}}"></script>
+    <script src="{{ '../js/jquery.lettering.js'}}"></script>
+    <script src="{{ '../js/jquery.textillate.js'}}"></script>
+    <script>
+    $(function() {
+        var $intro = $('.banner-intro');
+        var $main = $('.banner-main');
+        var $outro = $('.banner-outro');
+
+
+
+        $('.banner-intro').fadeIn();
+        $($main).textillate({ in: { effect: 'fadeIn' },
+            out: { effect: 'fadeOut', sync: true },
+            loop: true
+        });
+
+        function animationHover(element, animation) {
+            element = $(element);
+            element.hover(
+                function() {
+                    element.addClass('animated ' + animation);
+                },
+                function() {
+                    //wait for animation to finish before removing classes
+                    window.setTimeout(function() {
+                        element.removeClass('animated ' + animation);
+                    }, 2000);
+                });
+        }
+        $('.pt img').each(function() {
+            animationHover(this, 'pulse');
+        });
+        var p = $('.post').find("p").andSelf().filter("p:first").first();
+        p.html(function(i, html) {
+            return html.replace(/(\w+\s\w+\s\w+\s\w+\s\w+\s\w+\s\w+\s\w+\s\w+\s\w+\s\w+)/, '<strong>$1</strong>')
+        });
+    })
+    </script>
+</body>
+
+</html>

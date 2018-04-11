@@ -2,35 +2,21 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
-<div id="white">
-    <div class="container">
+<div class="container ">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p><img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="50px" height="50px">
-                    <ba>{{ author.display_name}}</ba>
-                </p>
-                <p>
-                    <bd>{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</bd>
-                </p>
-                <h4>{{ page.title }}</h4>
+            <div class="col-lg-12 ">
+
+                <h4 class="text-center">{{ page.title }}</h4>
+                <br>
                 {% if page.image %} <p><img class="img-responsive" src="assets/img/blog01.jpg" alt=""></p> {% endif %}
 
                 {{ content }}
                 <br>
-
-                <p>
-                    <bt>TAGS: - {% for tag in page.categories %}
-                        <a href="#">{{tag}}</a>
-                        {% endfor %}
-                    </bt>
-                </p>
                 <hr>
-                <p><a href="/blog"># Back</a></p>
             </div>
 
         </div>
         <!-- /row -->
     </div>
     <!-- /container -->
-</div><!-- /white -->
 
