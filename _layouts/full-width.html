@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-
 <body>
     <div class="content__wrapper {% if page.url == '/' %}bg-image{% endif %}">
         {% include header.html %}
@@ -11,27 +10,16 @@
     {% include footer.html %}
     </div>
 
-    <!-- /.row -->
     <script src="{{ '../js/jquery.js'}}"></script>
-    <!-- CORE BOOTSTRAP LIBRARY -->
-
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-    <!-- PARALLAX SCRIPTS-->
-    <!--<script src="-->
-    <!--/js/jquery-2.1.1.min.js"></script>-->
     <script src="{{ '../js/jquery.fittext.js'}}"></script>
     <script src="{{ '../js/jquery.lettering.js'}}"></script>
     <script src="{{ '../js/jquery.textillate.js'}}"></script>
+
     <script>
     $(function() {
         var $intro = $('.banner-intro');
         var $main = $('.banner-main');
         var $outro = $('.banner-outro');
-
-
-
         $('.banner-intro').fadeIn();
         $($main).textillate({ in: { effect: 'fadeIn' },
             out: { effect: 'fadeOut', sync: true },
@@ -60,6 +48,7 @@
         });
     })
     </script>
+
 </body>
 
 </html>

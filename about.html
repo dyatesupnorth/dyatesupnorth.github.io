@@ -5,4 +5,265 @@ permalink: /about/
 image: http://placehold.it/900x300
 weight: 3
 ---
-<h1>Nowt here yet.</h1>
+<header class="intro">
+    <div class="intro__header text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="http://www.github.com/dyatesupnorth" class="text-muted" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://www.twitter.com/mahmehtdave" class="text-muted" target="_blank"> <i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://stackoverflow.com/users/1532114/dyatesupnorth" class="text-muted" target="_blank"> <i class="fa fa-stack-overflow"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col align-self-center">
+                    <div class="pull-right">
+                        <a href="mailto:dyates.upnorth@gmail.com" class="btn btn-primary" type="">Work with me</a>
+                        <!-- <button class="btn btn-secondary" type="">Download CV</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro__main text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 align-self-center text-center">
+                        <img class="rounded-circle img-fluid" src="../img/profilepic.jpg"></img>
+                    </div>
+                    <div class="col-12 align-self-center text-center intro__main__text">
+                        <h3>Design. Develop. Deploy.</h3>
+                        <p>The web changes quick and I enjoy developing with the latest and greatest tools, frameworks and libraries. That said, i've got nothing against the tried and tested either.</p>
+                        <hr>
+                        <ul class="list-inline contact-list">
+                            <li class="list-inline-item">
+                                <small>
+                                <i class="fa fa-envelope"></i><a class="text-white" href="mailto:dyates.upnorth@gmail.com">dyates.upnorth@gmail.com</a>
+                                </small>
+                            </li>
+                            <li class="list-inline-item">
+                                <small>
+                                    <i class="fa fa-phone"></i><a href="tel: 0123456789" class="text-white">07407000338</a>
+                                </small>
+                            </li>
+                            <li class="list-inline-item">
+                                <small>
+                                    <i class="fa fa-globe"></i><a href="http://dyatesupnorth.github.io" class="text-white" target="_blank">dyatesupnorth.github.io</a>
+                                </small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro__footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul id="page-nav" class="nav justify-content-center">
+                            <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
+                            <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
+                            <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
+                            <!-- <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testimonials</a></li>
+                            <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li> -->
+                            <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//page-nav-->
+            </div>
+        </div>
+    </div>
+</header>
+<section id="experiences-section" class="experiences-section section">
+    <div class="container">
+        <h2 class="section-title text-center">Work Experiences</h2>
+        <hr>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="../img/erpaaslogo.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="text-muted">ERPaaS Limited </h4>
+                        <h5 class="subheading">Senior Applications Developer</h5>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Using a Java Spring based back end, we needed the flexibility to switch between RDBMS’s depending on a clients needs. We built a JSON proxy that was able to consume various back end services and supply the front end with a consistent JSON output. We used Hibernate and JRA as an ORM, taking over from stored procedures. We built a lot around the Oracle platform delivering our own data platform as a service. In effect we were able to provide extended functionality that wasn’t available as standard in most of these ‘out of the box’ software solutions. We used Jenkins as part of the deploy process here, BEM standards for Sass along with Material UI framework.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="../img/woodfordlogo.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="text-muted">Woodford Funds</h4>
+                        <h5 class="subheading">Senior Applications Developer</h5>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Working in an agile team delivering a data driven dashboard project. The backend was a REST API written using Laravel, with an AngularJS 1.x front end. I used a lot of artisan commands, composer for dependency management, all using a Vagrant VM (Homestead), as a development environment. Git was used for version control. We deployed using Docker / Jenkins and were able to provision our own development environments as needed. We used MySQL as an RDBMS in the end, replacing costly HTTP requests from the SOAP Service we were using. Other backend technologies included needing to use SoapUI to query a SOAP/XML service. Github was used for version control. BEM used for Sass standards. We wrote our own UI, rather than relying on Bootstrap, when user interactivity was beginning to be needed we used angular-bootstrap as it brought many common UX components into the project. Challenges presented in this role were issues we dealt with relating to consuming a SOAP service, and then returning that in a consistent format for the front end. We would often encounter out of memory issues relating to the size of some of the requests we would get. We solved these by effectively chunking them, and using an RDBMS to store, which we then passed to the front end. We looked at tech like Redis to achieve this faster but ultimately decided that in this case MySQL was adequate. Orchestrated the refactor of the Angular front end to move towards a more component driven lifecycle, in line with the style guide we were using at the time. This was to help ease us into a possible migration to Angular 2 down the line. PHP 5.4, 7.1 and 7.2. Front end tech we were using included Sass, Gulp, Bower and NodeJS. Highlights of the role included creating some innovative solutions as part of one day hackathons.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="../img/upnorth.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="text-muted">Upnorth Creative Media</h4>
+                        <h5 class="subheading">Senior Web Developer</h5>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Using various technologies to provide web solutions for local and regional clients. Working as an independent contractor on various projects including building e-commerce websites alongside working on in house software solutions. Some examples of work for clients includes building REST API’s with Laravel and interfacing with them using AngularJS to handle two-way data binding between the server and the client. Other notable projects include web scraping applications using NodeJS and PhantomJS. Using the MEAN stack, built a platform around the API provided by Betfair. This evolved into a Laravel Rest API running a NodeJS daemon server side that used Redis to publish and subscribe to events. We used socket.js to send and receive messages to the front end. The front end for this project moved from AngularJS to Vue1 and currently uses Vue2. Building E Commerce solutions for local clients using Magento as well as Wordpress / Woocommerce. UI Frameworks used included Bootstrap 3 / 4, along with Foundationjs. Used ReactJs / Redux for a number of small dashboards built to display stock data. As well as personal dashboards displaying daily tasks / quote of the day etc. We used both Github and Bitbucket for version control. PHP Versions 5.4, 7.1 and 7.2. Laravel versions 4, 5.1, 5.2, 5.4 and 5.5. BEM was used for Sass standards. Test driven development is the methodology employed whilst writing code here. Back end tests were written in PHPUnit, with Jasmine / Karma handling the front end stuff. Used Machine Learning libraries to implement various algorithms on historical data, using both Classification and Non-classification methods to analyse and predict various outcomes for clients. Used React with Redux to create a data-driven dashboard application pulling stock data, along with the days’ news. Built and released 2 iOS games, written in Swift. Also built a Swift prototype to demonstrate how to communicate with our Laravel REST API. Wrote a small app that worked with the Google Books’ API, written with the MEAN stack. Other tools we used here are the usual: NPM, Gulp, Grunt, Sass etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="../img/torigalogo.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="text-muted">Toriga Energy</h4>
+                        <h5 class="subheading">Senior Web Developer / Senior Front End Developer </h5>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Developing an auditing software using C# MVC, Angular Js, Breeze and Entity Framework. Alongside the development of this software I worked on integrating it with various microsites and web based mobile applications that interfaced with third-party API’s. We used MVC to build the microsites. The REST API we also wrote in MVC, with the front end written in AngularJS. We used TFS for version control and had gated check-ins running automated tests to ensure code quality. We used Cordova / Phonegap along with AngularJs to create a mobile app initially. This app was designed to consume the REST API we had written. Besides helping to develop core functionality of our back end products I was responsible for overseeing the whole front end process, improving front end functionality and making improvements to the UI and UX based on feedback from business users. During the creation of the front end, I used various techniques to make sure that real-time data was displayed as accurately as possible. Used Less here, BEM was used for Less standards. Would demonstrate prototypes and wireframes based on information I gathered from business users. Consistently exhibited a means of turning a business idea into a viable solution and was involved in taking these ideas from beginning to end. Involved in the requirements gathering stages and also with managing a small team, delegating tasks effectively to ensure maximum productivity.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="../img/celogo.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="text-muted">Creative Emporium</h4>
+                        <h5 class="subheading">Web Developer</h5>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Using AGILE methodologies with an Object Oriented programming approach and working with a small team to develop bespoke E-Commerce websites. Each site offering a CMS to fully customise the site, the ability to place and receive orders and update stock as required. Also developing websites for external clients, some merely to advertise their services, others more complex involving e-commerce solutions. Websites are tailored to each client, some requiring a responsive design approach. It was important that the admin area of our custom CMS not only performed well, but looked just as slick. There was a lot of effort put into the UI of the CMS, including various data visualisation techniques (d3.js)). We had over 100 client sites built on Magento (community), and in other cases Wordpress / Woocommerce, which I was responsible for maintaining, alongside developing new modules / functionality when required. Examples here would include a custom shipping module for Magento. We used Bitbucket for version control here. BEM was used for Sass standards. We used Zend Framework 2 as a backend with AngularJS used on the front end. We originally used jQuery / CSS3 however I engineered a solution using AngularJS / Sass which provided far more benefits to the current solution. Other roles here include technical support to each of our existing clients and the coding of regular email newsletters as required by clients.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="education-section" class="education-section section">
+    <div class="container">
+        <h2 class="section-title text-center">Education</h2>
+        <hr>
+        <div class="row">
+            <div class="item col-12 col-md-4 text-center">
+                <h4 class="educaion-title">BSc. Computer Science </h4>
+                <p class="education-place">
+                    University of Highlands & Islands
+                </p>
+                <div class="time">2012 - 2013</div>
+            </div>
+            <div class="item col-12 col-md-4 text-center">
+                <div class="item-inner">
+                    <h4 class="education-title">HND in Computing </h4>
+                    <div class="education-place">
+                        University of Highlands & Islands
+                    </div>
+                    <div class="time">2010 - 2011</div>
+                </div>
+            </div>
+            <div class="item col-12 col-md-4 text-center">
+                <div class="item-inner">
+                    <h4 class="education-title">HNC in Computing </h4>
+                    <div class="education-place">
+                        University of Highlands & Islands
+                    </div>
+                    <div class="time">2009 - 2010</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//section-->
+<section id="skills-section" class="skills-section section text-center">
+    <div class="container">
+        <h2 class="section-title">Professional Skills</h2>
+        <hr>
+        <div class="row">
+            {% for element in site.data.skillChart.professionalskills %}
+            <div class="col-4 align-self-center skill-chart">
+                <div id="chart--{{forloop.index}}--{{element.value}}" class="chart">
+                    <div class="skill-icon text-center">
+                        <i class="{{element.icon}}"></i>
+                    </div>
+                </div>
+                <h3>{{element.title}}</h3>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--//other-skills-->
+</section>
+<section id="contact-section" class="contact-section section text-center">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <hr>
+        <div class="intro">
+            <div class="dialog">
+                <p><strong>I can help with the following:</strong></p>
+                <ul class="list-unstyled service-list">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> App development with ReactJS / Swift</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Front-end development with AngularJS</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Back-end development with Laravel</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> UI development</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> UX prototyping</li>
+                </ul>
+                <p>Drop me an email at <a href="mailto:dyates.upnorth@gmail.com">dyates.upnorth@gmail.com</a> or call me at <a href="tel:07407000338">07407000338</a></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{{ '../js/easypiechart.min.js'}}"></script>
+<script>
+var element = document.querySelector('.chart');
+var charts = document.getElementsByClassName('chart');
+console.log(charts);
+for (var i = 0; i < charts.length; ++i) {
+    var chart = new EasyPieChart(charts[i], {
+        barColor: function(percent) {
+            return (percent < 50 ? '#67655A' : percent < 85 ? '#DDCCA4' : '#4762AB');
+        },
+        scaleColor: false,
+        lineWidth: 20,
+        lineCap: 'circle'
+    });
+    var last2 = chart.el.id.slice(-2);
+    chart.update(last2);
+    console.log(chart);
+
+}
+</script>

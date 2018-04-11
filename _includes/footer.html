@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm text-md-left ">
-                <p>
+                <p class="{% if page.url != '/' %}text-dark{% endif %}">
                     Homepage photo by <a href="https://unsplash.com/@aows?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from adrian">adrian</a> on <a href="http://www.unsplash.com" target="_blank">Unsplash</a>
                 </p>
             </div>
@@ -21,8 +21,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm text-md-right">
-                <p>Family | Gym | Code |
+            <div class="col-sm text-md-right ">
+                <p class="{% if page.url != '/' %}text-dark{% endif %}">Family | Gym | Code |
                     <a href="/contact">
                         Contact me
                     </a>

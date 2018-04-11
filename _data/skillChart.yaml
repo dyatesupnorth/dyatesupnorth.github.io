@@ -1,0 +1,28 @@
+professionalskills:
+  - title: Laravel
+    value: 91
+    icon: devicon-laravel-plain
+  - title: AngularJS
+    value: 90
+    icon: devicon-angularjs-plain
+  - title: ReactJS
+    value: 82
+    icon: devicon-react-original
+  - title: VueJS
+    value: 79
+    icon: devicon-vuejs-plain
+  - title: HTML5
+    value: 86
+    icon: devicon-html5-plain
+  - title: Sass
+    value: 92
+    icon: devicon-sass-original
+  - title: jQuery
+    value: 74
+    icon: devicon-jquery-plain
+  - title: PHP
+    value: 78
+    icon: devicon-php-plain
+  - title: Swift
+    value: 60
+    icon: devicon-swift-plain

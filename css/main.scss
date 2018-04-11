@@ -3,9 +3,18 @@
 ---
 @charset "utf-8";
 // Import partials from `sass_dir` (defaults to `_sass`)
+
+//Override Bootstrap...
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Extend Bootstrap...
 @import "animate";
 @import "base";
 @import "layout";
 @import "timeline";
 @import "portfolio";
+
+
+
 

@@ -1,0 +1,29 @@
+{
+  "name": "dyatesupnorth.github.io",
+  "version": "1.0.0",
+  "description": "One man. One keyboard. One Kick ass website.",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyatesupnorth/dyatesupnorth.github.io.git"
+  },
+  "keywords": [
+    "Dave",
+    "Yates",
+    "Web",
+    "Developer"
+  ],
+  "author": "Dave Yates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyatesupnorth/dyatesupnorth.github.io/issues"
+  },
+  "homepage": "https://github.com/dyatesupnorth/dyatesupnorth.github.io#readme"
+}
