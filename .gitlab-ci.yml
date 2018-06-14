@@ -6,6 +6,6 @@ pages:
   - jekyll build -d public/
   artifacts:
     paths:
-    - public
+    - /public
   only:
   - master
