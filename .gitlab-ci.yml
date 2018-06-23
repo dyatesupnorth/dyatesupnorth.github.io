@@ -1,9 +1,25 @@
-image: ruby:2.1
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - bundle install
+
+test:
+  stage: test
+  script:
+  - jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
 
 pages:
+  stage: deploy
   script:
-  - gem install jekyll
-  - jekyll build -d public/
+  - jekyll build -d public
   artifacts:
     paths:
     - public
