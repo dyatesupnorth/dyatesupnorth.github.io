@@ -6,9 +6,13 @@ image: http://placehold.it/900x300
 weight: 3
 ---
 <header class="intro">
+       
     <div class="intro__header text-white">
-        <div class="container">
-            <div class="row">
+            
+        <div class="intro__header__top shadow-lg container-fluid">
+               
+            <div class="container">
+                <div class="row">
                 <div class="col align-self-center">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -24,21 +28,24 @@ weight: 3
                         </li>
                     </ul>
                 </div>
+
                 <div class="col align-self-center">
                     <div class="pull-right">
                         <a href="mailto:dyates.upnorth@gmail.com" class="btn btn-primary" type="">Work with me</a>
                         <!-- <button class="btn btn-secondary" type="">Download CV</button> -->
                     </div>
                 </div>
+                </div>
             </div>
+          
         </div>
-        <div class="intro__main text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 align-self-center text-center">
-                        <img class="rounded-circle img-fluid" src="../img/profilepic.jpg"></img>
+        <div class="container-fluid main-wrapper">
+            <div class="row h-75 justify-content-center align-items-center">
+                <div class="intro__main text-white">
+                    <div class="align-self-center text-center">
+                        <img class="rounded-circle img-fluid" src="https://avatars0.githubusercontent.com/u/17150736?s=460&v=4"></img>
                     </div>
-                    <div class="col-12 align-self-center text-center intro__main__text">
+                    <div class="align-self-center text-center intro__main__text">
                         <h3>Design. Develop. Deploy.</h3>
                         <p>The web changes quick and I enjoy developing with the latest and greatest tools, frameworks and libraries. That said, i've got nothing against the tried and tested either.</p>
                         <hr>
@@ -60,26 +67,27 @@ weight: 3
                             </li>
                         </ul>
                     </div>
+            
+            
+        </div>
+            </div>
+            <div class="row h-25 align-items-end">
+                <div class="intro__footer text-white w-100">
+                    <ul id="page-nav" class="nav justify-content-center">
+                        <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
+                        <!-- <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testimonials</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li> -->
+                        <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="intro__footer text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <ul id="page-nav" class="nav justify-content-center">
-                            <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
-                            <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
-                            <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
-                            <!-- <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testimonials</a></li>
-                            <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li> -->
-                            <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--//page-nav-->
-            </div>
-        </div>
+            
+            
+          </div>
+          
+        
     </div>
 </header>
 <section id="experiences-section" class="experiences-section section">
@@ -87,6 +95,40 @@ weight: 3
         <h2 class="section-title text-center">Work Experiences</h2>
         <hr>
         <ul class="timeline">
+                <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="https://pbs.twimg.com/profile_images/893577855904370688/L_t-rho5_400x400.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-muted">Coinschedule Ltd </h4>
+                                <h5 class="subheading">Senior Applications Developer</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                        Using Angular 6 with Universal (Node) and a Laravel API, Coinschedule needed someone to bootstrap their development cycle for the new version of their site. I was involved in the architectural design including how the company see’s their infrastructure to be rolled out over the next phase of their development cycle. Alongside implementing a service worker, unit tests and Angular server side rendering I also got to grips with implementing smart contracts on the Ethereum Blockchain.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="../img/inprofit_logo_solo.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-muted">Inprofit Traders</h4>
+                                <h5 class="subheading">Senior Applications Developer</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                        Inprofit is a trading and betting platform built using Laravel, with a React-Redux Front End. Using various machine-learning techniques to model and predict price data, the project also uses various web scraping techniques as well as interfacing with third party API’s including the Betfair API. I bootstrapped and took the initial project idea to conception stage.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
             <li>
                 <div class="timeline-image">
                     <img class="rounded-circle img-fluid" src="../img/erpaaslogo.jpg" alt="">
